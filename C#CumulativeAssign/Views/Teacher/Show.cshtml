@@ -7,9 +7,14 @@
 <div id="containershow">
     <nav>
         <a class="navlink" href="/Teacher/List">Back To Teachers</a>
-        <a class="dellink" href="/Content/Deleteconfirm">Delete</a>
+        <div class="delete">
+            <a class="dellink" href="/Teacher/DeleteConfirm/@Model.TeacherId">Delete</a>
+        </div>
     </nav>
     <h2>@Model.TeacherFname @Model.TeacherLname</h2>
+    <p>Employee Number: @Model.EmployeeNumber</p>
+    <p>Hire date: @Model.HireDate</p>
+    <p>Salary: $@Model.Salary</p>
     <p>@Model.TeacherId</p>
 </div>
 

@@ -32,5 +32,20 @@ namespace C_CumulativeAssign.Controllers
 
             return View(NewTeacher);
         }
+        //GET : /Teacher/DeleteConfirm/{id}
+        public ActionResult DeleteConfirm(int id)
+        {
+            TeacherDataController controller = new TeacherDataController();
+            Teacher NewTeacher = controller.FindTeacher(id);
+
+
+            return View(NewTeacher);
+        }
+
+        //POST: /Teacher/Delete/{id}
+        public ActionResult Delete(int id)
+        {
+            return RedirectToAction("List");
+        }
     }
 }

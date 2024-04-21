@@ -127,5 +127,18 @@ namespace C_CumulativeAssign.Controllers
             return NewTeacher;
         }
 
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <example>POST : /api/TeacherData/DeleteTeacher/3</example>
+        [HttpPost]
+        public void DeleteTeacher(int id)
+        {
+
+        }
+
+
     }
 }
